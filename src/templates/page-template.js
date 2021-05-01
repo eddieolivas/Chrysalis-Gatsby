@@ -7,14 +7,14 @@ import Layout from "../components/layout";
 
 const SecondPage = ({ data }) => (
   <Layout>
-    <SEO
+    {/* <SEO
       title={data.wpgraphql.post.title}
       description={data.wpgraphql.post.excerpt}
       image={
         data.wpgraphql.post.featuredImage &&
         `https://n8finch.com${data.wpgraphql.post.featuredImage.imageFile.childImageSharp.fluid.src}`
       }
-    />
+    /> */}
     {data.wpgraphql.post.featuredImage && (
       <img
         src={data.wpgraphql.post.featuredImage.mediaItemUrl}
