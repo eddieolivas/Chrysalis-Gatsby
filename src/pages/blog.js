@@ -57,22 +57,6 @@ export const pageQuery = graphql`
               }
             }
             content(format: RENDERED)
-            featuredImage {
-              altText
-              title(format: RENDERED)
-              mediaItemUrl
-              slug
-              sourceUrl
-              mediaItemId
-              modified
-              imageFile {
-                childImageSharp {
-                  fixed(width: 250) {
-                    ...GatsbyImageSharpFixed_tracedSVG
-                  }
-                }
-              }
-            }
           }
         }
       }

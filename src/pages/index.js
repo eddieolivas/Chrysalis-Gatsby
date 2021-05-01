@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => (
         {data.wpgraphql.blogs.edges.map(({ node }) => (
           <div key={node.slug}>
             <Link className="blog-link" to={`/${node.slug}`}>
-              {null !== node.featuredImage && (
+              {undefined !== node.featuredImage && (
                 <Img
                   className="blog-image"
                   fixed={node.featuredImage.imageFile.childImageSharp.fixed}
@@ -119,22 +119,6 @@ export const pageQuery = graphql`
             date
             excerpt
             content(format: RENDERED)
-            featuredImage {
-              altText
-              title(format: RENDERED)
-              mediaItemUrl
-              slug
-              sourceUrl
-              mediaItemId
-              modified
-              imageFile {
-                childImageSharp {
-                  fixed(width: 50) {
-                    ...GatsbyImageSharpFixed_tracedSVG
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -150,12 +134,6 @@ export const pageQuery = graphql`
             title
             date
             content(format: RENDERED)
-            featuredImage {
-              altText
-              link
-              mediaItemUrl
-              uri
-            }
           }
         }
       }

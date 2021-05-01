@@ -10,7 +10,7 @@ const initialState = {
 const BlogItem = ({ children }) => {
   return (
     <div className="blog-archive-container" key={children.slug}>
-      {null !== children.featuredImage && (
+      {undefined !== children.featuredImage && (
         <div className="blog-archive-image-container">
           <Link to={`/${children.slug}`}>
             <Img

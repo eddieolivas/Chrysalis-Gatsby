@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `WP GraphQL Gatsby Starter`,
@@ -30,7 +32,7 @@ module.exports = {
         // This is field under which it's accessible
         fieldName: `wpgraphql`,
         // Url to query from
-        url: `https://dev-gatsby-wpgraphql-starter.pantheonsite.io/graphql`,
+        url: process.env.WP_URL,
       },
     },
     {

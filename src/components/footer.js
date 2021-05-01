@@ -18,7 +18,7 @@ const Footer = ({ siteTitle, siteDescription }) => (
         >
           Gatsby
         </a>
-        {` `}by Nate Finch
+        {` `}by Eddie Olivas
       </footer>
     )}
   </ThemeContext.Consumer>
