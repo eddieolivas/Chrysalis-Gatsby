@@ -7,24 +7,19 @@ import Layout from "../components/layout";
 
 const SecondPage = ({ data }) => (
   <Layout>
-    {/* <SEO
-      title={data.wpgraphql.post.title}
-      description={data.wpgraphql.post.excerpt}
-      image={
-        data.wpgraphql.post.featuredImage &&
-        `https://n8finch.com${data.wpgraphql.post.featuredImage.imageFile.childImageSharp.fluid.src}`
-      }
-    /> */}
-    {data.wpgraphql.post.featuredImage && (
+    <SEO
+      title={data.wpgraphql.page.title}
+    />
+    {data.wpgraphql.page.featuredImage && (
       <img
-        src={data.wpgraphql.post.featuredImage.mediaItemUrl}
-        alt={data.wpgraphql.post.title}
+        src={data.wpgraphql.page.featuredImage.mediaItemUrl}
+        alt={data.wpgraphql.page.title}
       />
     )}
 
-    <h1 dangerouslySetInnerHTML={{ __html: data.wpgraphql.post.title }} />
+    <h1 dangerouslySetInnerHTML={{ __html: data.wpgraphql.page.title }} />
 
-    <div dangerouslySetInnerHTML={{ __html: data.wpgraphql.post.content }} />
+    <div dangerouslySetInnerHTML={{ __html: data.wpgraphql.page.content }} />
 
     <Link to="/">Go back to the homepage</Link>
   </Layout>
@@ -35,18 +30,15 @@ export default SecondPage;
 export const query = graphql`
   query($databaseId: ID!) {
     wpgraphql {
-      post(id: $databaseId, idType: DATABASE_ID) {
+      page(id: $databaseId, idType: DATABASE_ID) {
         title
         date
         content(format: RENDERED)
-        categories {
-          edges {
-            node {
-              name
-            }
+        featuredImage {
+          node {
+            uri
           }
         }
-        excerpt(format: RENDERED)
       }
     }
   }
