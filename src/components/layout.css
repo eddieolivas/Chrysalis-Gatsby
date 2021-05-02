@@ -4,25 +4,22 @@ eggplant: #49274a
 sand: #f4decb
 shell: #f8eee7 */
 
-@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import url('https://fonts.googleapis.com/css?family=Raleway:regular,bold,italic&subset=latin,latin-ext');
 
 html {
-  font-family: 'Raleway', -apple-system, Roboto, Helvetica Neue,
-    Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font-family: 'Raleway', -apple-system, Roboto, Helvetica Neue,
-    Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  font-family: 'Raleway', -apple-system, Roboto, Helvetica Neue,
-    Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 article,
@@ -217,8 +214,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Raleway', -apple-system, Roboto, Helvetica Neue,
-    Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
