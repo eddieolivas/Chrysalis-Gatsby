@@ -5,6 +5,9 @@ export default () => {
   return (
     <nav>
       <ul>
+      <li>
+          <Link to={`/services`}>Services</Link>
+        </li>
         <li>
           <Link to={`/blog`}>Blog</Link>
         </li>

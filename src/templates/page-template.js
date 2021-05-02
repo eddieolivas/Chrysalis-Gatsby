@@ -10,12 +10,6 @@ const SecondPage = ({ data }) => (
     <SEO
       title={data.wpgraphql.page.title}
     />
-    {data.wpgraphql.page.featuredImage && (
-      <img
-        src={data.wpgraphql.page.featuredImage.mediaItemUrl}
-        alt={data.wpgraphql.page.title}
-      />
-    )}
 
     <h1 dangerouslySetInnerHTML={{ __html: data.wpgraphql.page.title }} />
 

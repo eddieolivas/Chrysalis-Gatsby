@@ -52,6 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
               title
               date
               content(format: RENDERED)
+              uri
             }
           }
         }
@@ -60,8 +61,9 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
   
   pageResults.data.wpgraphql.pages.edges.forEach(({ node }) => {
+    // console.log(node.uri);
     createPage({
-      path: node.slug,
+      path: node.uri,
       component: path.resolve(`./src/templates/page-template.js`),
       context: {
         // This is the $slug variable

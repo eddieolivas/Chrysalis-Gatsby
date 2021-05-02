@@ -2,10 +2,10 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `WP GraphQL Gatsby Starter`,
-    description: `Get started...`,
-    author: `@n8finch`,
-    image: `${__dirname}/src/images/gatsby-astronaut.png`,
+    title: `Chrysalis Web Development`,
+    description: `Chrysalis Web Development in Gatsby`,
+    author: `@Eddie-Olivas`,
+    image: `${__dirname}/src/images/Chrysalis-Logo-small1.png`,
   },
   plugins: [
     {
@@ -15,6 +15,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,6 +34,12 @@ module.exports = {
         fieldName: `wpgraphql`,
         // Url to query from
         url: process.env.WP_URL,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-catch-links`,
+      options: {
+        excludePattern: /(excluded-link|external)/,
       },
     },
     {

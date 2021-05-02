@@ -4,14 +4,16 @@ eggplant: #49274a
 sand: #f4decb
 shell: #f8eee7 */
 
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
 html {
-  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica Neue,
+  font-family: 'Raleway', -apple-system, Roboto, Helvetica Neue,
     Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica Neue,
+  font-family: 'Raleway', -apple-system, Roboto, Helvetica Neue,
     Helvetica, Arial, sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +21,7 @@ body {
 }
 
 * {
-  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica Neue,
+  font-family: 'Raleway', -apple-system, Roboto, Helvetica Neue,
     Helvetica, Arial, sans-serif;
 }
 
@@ -215,7 +217,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica Neue,
+  font-family: 'Raleway', -apple-system, Roboto, Helvetica Neue,
     Helvetica, Arial, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -246,8 +248,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2rem;
@@ -263,8 +264,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -280,8 +280,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -297,8 +296,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -314,8 +312,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -331,8 +328,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;

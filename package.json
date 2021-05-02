@@ -1,16 +1,19 @@
 {
   "name": "wp-graphql-gatsby-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and WP GraphQL.",
+  "description": "Chrysalis Web Development portfolio site built with Gatsby.",
   "version": "0.1.0",
-  "author": "Nate Finch <finchproservices@gmail.com>",
+  "author": "Eddie Olivas <eddie@chrysaliswebdevelopment.com>",
   "dependencies": {
-    "gatsby": "^2.19.7",
+    "babel-plugin-styled-components": "^1.12.0",
+    "gatsby": "^2.25.0",
     "gatsby-image": "^2.2.39",
+    "gatsby-plugin-catch-links": "^2.3.11",
     "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sass": "^2.1.31",
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-source-graphql": "^2.1.33",
@@ -18,7 +21,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "sass": "^1.32.12"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
