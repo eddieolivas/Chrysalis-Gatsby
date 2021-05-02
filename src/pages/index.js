@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
       image=""
     />
     <h1>
-      Hey y'all!
+      Just getting started!&nbsp;
       <span role="img" aria-label="waving hello">
         👋
       </span>
@@ -22,16 +22,12 @@ const IndexPage = ({ data }) => (
     <div className="introduction box-wrapper-first">
       <div className="box">
         <p>
-          Fill out an intro to yourself here... Put your picture on the right!
+          I'm building out my monolithic <a href="https://www.chrysaliswebdevelopment.com" target="_blank" rel="noreferrer">WordPress portfolio site</a> using <a href="https://www.gatsbyjs.com/" rel="noreferrer" target="_blank">GatsbyJS</a>.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrum exercitationem ullam corporis suscipit
-          laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Having learned a lot about React recently and having built a <a href="https://eddies-burger-builder.netlify.app/" target="_blank" rel="noreferrer">Burger Builder app</a> with it 
+        I thought I'd implement what I've learned in a real-world project by building out my 
+        existing WordPress site in GatsbyJS. Should be fun!
         </p>
       </div>
       <div className="box">
