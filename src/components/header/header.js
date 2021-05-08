@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import Menu from "../menu";
+import Navigation from "../navigation/navigation";
 import Logo from '../../assets/images/Chrysalis-Logo-small1.png'
 import styles from './header.module.scss';
 
@@ -19,7 +19,7 @@ const Header = ({ siteTitle, siteDescription }) => (
             />
           </Link>
         </div>
-        <Menu />
+        <Navigation />
       </div>
     </div>
   </>

@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "gatsby";
+//import { Link } from "gatsby";
+import NavItems from './navItems';
 
-export default () => {
+export default ({navItems}) => {
   return (
     <nav>
+      
       <ul>
-      <li>
+        <NavItems />
+      {/* <li>
           <Link to={`/services`}>Services</Link>
         </li>
         <li>
@@ -16,7 +19,7 @@ export default () => {
         </li>
         <li>
           <Link to={`/contact`}>Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
