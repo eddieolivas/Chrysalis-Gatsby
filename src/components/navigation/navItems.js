@@ -5,15 +5,15 @@ export default () => {
   return (
     <ul className={"flex"}>
       <li className={"mr-6"}>
-        <Link className={"text-black-400"} to={"/services"}>Services</Link>
+        <Link className={"text-blue-500"} to={"/services"}>Services</Link>
           <ul>
             <li style={{"display" : "none"}}>
-              <Link className={"text-black-400"} to={"/services/web-design-and-development/"}>Web Design &amp; Development</Link>
+              <Link className={"text-white"} to={"/services/web-design-and-development/"}>Web Design &amp; Development</Link>
             </li>
           </ul>  
       </li>
       <li className={"mr-6"}>
-        <Link className={"text-black-400"} to={"/blog"}>Blog</Link>
+        <Link className={"text-blue-400"} to={"/blog"}>Blog</Link>
       </li>
       <li className={"mr-6"}>
         <Link className={"text-black-400"} to={"/about"}>About</Link>

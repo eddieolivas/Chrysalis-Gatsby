@@ -24,6 +24,7 @@ module.exports = {
         ],
       }
     },
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
