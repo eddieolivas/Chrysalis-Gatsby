@@ -5,7 +5,7 @@ export default () => {
   return (
     <ul className={"flex"}>
       <li className={"mr-6"}>
-        <Link className={"text-blue-500"} to={"/services"}>Services</Link>
+        <Link className={"text-green-500"} to={"/services"}>Services</Link>
           <ul>
             <li style={{"display" : "none"}}>
               <Link className={"text-white"} to={"/services/web-design-and-development/"}>Web Design &amp; Development</Link>
