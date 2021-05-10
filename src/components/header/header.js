@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import Navigation from "../navigation/navigation";
 import Logo from '../../assets/images/Chrysalis-Logo-small1.png'
+import { GetMenuItems } from '../../hooks/getMenuItems';
 import styles from './header.module.scss';
 
 const Header = ({ siteTitle, siteDescription }) => (
@@ -19,7 +20,7 @@ const Header = ({ siteTitle, siteDescription }) => (
             />
           </Link>
         </div>
-        <Navigation />
+        <Navigation navItems={GetMenuItems().primaryNav} />
       </div>
     </div>
   </>
