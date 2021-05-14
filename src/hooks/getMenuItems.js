@@ -24,7 +24,7 @@ export const GetMenuItems = () => {
     const { primaryNav, footerNav } = useStaticQuery(graphql`
         query footerMenuItemsAndPrimaryMenuItems {
           primaryNav: wpgraphql {
-            menuItems(where: {location: PRIMARY_MENU}) {
+            menuItems(where: {location: PRIMARY_MENU}, first: 100) {
               nodes {
                 id
                 parentId
@@ -34,7 +34,7 @@ export const GetMenuItems = () => {
             }
           }
           footerNav: wpgraphql {
-            menuItems(where: {location: FOOTER_MENU}) {
+            menuItems(where: {location: FOOTER_MENU}, first: 100) {
               nodes {
                 path
                 label

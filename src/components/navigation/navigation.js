@@ -6,20 +6,27 @@ export default ({navItems}) => {
   const navList = navItems.map((navItem, i) => {
     if (navItem.children.length) {
       return (
-        <ul key={i} title={navItem.label} id="basic-nav-dropdown">
-            {navItem.children.map((navItemChild, j) => (
-                <Link
-                    key={`${i}-${j}`}
-                    to={navItemChild.path}>
-                    {navItemChild.label}
-                </Link>
-            ))}
-        </ul>
+        <div 
+          key={"wrap" + i}
+          style={{"display" : "inline-flex"}}>
+          <Link 
+            to={navItem.path}
+            key={"navItem" + i}>{navItem.label}</Link>
+          <ul key={i} title={navItem.label} id="basic-nav-dropdown">
+              {navItem.children.map((navItemChild, j) => (
+                  <Link
+                      key={`${i}-${j}`}
+                      to={navItemChild.path}>
+                      {navItemChild.label}
+                  </Link>
+              ))}
+          </ul>
+        </div>
       );
     }
     return (
       <Link
-          key={i}
+          key={"topNavItem" + i}
           to={navItem.path}>
           {navItem.label}
       </Link>
