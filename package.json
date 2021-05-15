@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Eddie Olivas <eddie@chrysaliswebdevelopment.com>",
   "dependencies": {
+    "@headlessui/react": "^1.2.0",
+    "@heroicons/react": "^1.0.1",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.25.0",
     "gatsby-image": "^2.2.39",
