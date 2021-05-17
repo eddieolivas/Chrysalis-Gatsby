@@ -23,7 +23,6 @@ export default ({navItems}) => {
               <div>
                 <Menu.Button 
                   className="inline-flex w-full px-3 py-2 bg-white text-sm font-medium text-black hover:bg-green hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
-                  onMouseEnter={() => open}
                   key={"MenuButton" + i}>
                   {navItem.label}
                   <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
@@ -50,16 +49,16 @@ export default ({navItems}) => {
                       <Menu.Item
                         key={"MenuItem" + j}>
                       {({ active }) => (
-                        <a
-                          href={navItemChild.path}
+                        <Link
+                          to={navItemChild.path}
                           className={classNames(
-                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                            'block px-4 py-2 text-sm'
+                            active ? 'bg-green text-white transition ease-in duration-10 border-b-0' : 'text-black',
+                            'block px-4 py-2 text-sm transition ease-in duration-10 border-b-0'
                           )}
                           key={"navItem" + j}
                         >
                           {navItemChild.label}
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                     ))}
@@ -74,7 +73,7 @@ export default ({navItems}) => {
       <Link
           key={"topNavItem" + i}
           to={navItem.path}
-          className={"inline-flex text-center w-full px-4 py-2 bg-white text-sm font-medium text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"}>
+          className={"inline-flex text-center w-full px-4 py-2 bg-white text-sm font-medium text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500 hover:border-b-0"}>
           {navItem.label}
       </Link>
     );

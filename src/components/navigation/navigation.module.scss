@@ -11,6 +11,10 @@
     }
   }
 
+  [aria-current="page"] {
+    font-weight: bold;
+  }
+
   button {
     white-space: nowrap;
   }

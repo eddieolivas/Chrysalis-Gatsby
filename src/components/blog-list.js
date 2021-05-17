@@ -88,7 +88,7 @@ const BlogList = props => {
       <p>Search posts by title or category...</p>
       <input
         type="text"
-        placeholder="Type to fileter posts by title"
+        placeholder="Type to filter posts by title"
         onChange={handleSearch}
         style={{ minWidth: "300px" }}
         value={searchTerm}
