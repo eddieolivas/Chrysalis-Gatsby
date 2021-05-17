@@ -1,0 +1,17 @@
+#MainNav {
+  a {
+    padding: 0.5rem 1rem;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: #61af36;
+      border: none;
+      box-shadow: inset 0 0 30px #69992f;
+      color: #fff;
+    }
+  }
+
+  button {
+    white-space: nowrap;
+  }
+}

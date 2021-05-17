@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import styles from './navigation.module.scss';
 //import NavItems from './navItems';
 
 function classNames(...classes) {
@@ -13,12 +14,18 @@ export default ({navItems}) => {
   const navList = navItems.map((navItem, i) => {
     if (navItem.children.length) {
       return (
-        <Menu as="div" className="relative inline-block text-left">
+        <Menu 
+          as="div"
+          className="relative inline-block text-left"
+          key={"menu" + i}>
           {({ open }) => (
             <>
               <div>
-                <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-                {navItem.label}
+                <Menu.Button 
+                  className="inline-flex w-full px-3 py-2 bg-white text-sm font-medium text-black hover:bg-green hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                  onMouseEnter={() => open}
+                  key={"MenuButton" + i}>
+                  {navItem.label}
                   <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                 </Menu.Button>
               </div>
@@ -35,11 +42,13 @@ export default ({navItems}) => {
               >
                 <Menu.Items
                   static
-                  className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  className="origin-top-right absolute right-0 mt-2 w-56 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  key={"MenuItems" + i}
                 >
                   <div className="py-1"></div>
                     {navItem.children.map((navItemChild, j) => (
-                      <Menu.Item>
+                      <Menu.Item
+                        key={"MenuItem" + j}>
                       {({ active }) => (
                         <a
                           href={navItemChild.path}
@@ -47,6 +56,7 @@ export default ({navItems}) => {
                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                             'block px-4 py-2 text-sm'
                           )}
+                          key={"navItem" + j}
                         >
                           {navItemChild.label}
                         </a>
@@ -63,13 +73,14 @@ export default ({navItems}) => {
     return (
       <Link
           key={"topNavItem" + i}
-          to={navItem.path}>
+          to={navItem.path}
+          className={"inline-flex text-center w-full px-4 py-2 bg-white text-sm font-medium text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"}>
           {navItem.label}
       </Link>
     );
   });
   return (
-    <nav>
+    <nav id={styles.MainNav}>
         {navList}
       {/* <li>
           <Link to={`/services`}>Services</Link>
