@@ -1,4 +1,8 @@
 # Chrysalis-Gatsby
-Building out my portfolio website with Gatsby.
+I'm building out my portfolio website with GatsbyJS.
 
-See it in action here: https://chrysalis-gatsby.netlify.app/
+The original WordPress site is here: https://www.chrysaliswebdevelopment.com
+
+The new Gatsby site is in progress here: https://chrysalis-gatsby.netlify.app/
+
+In this project, I'm also using TailWindCSS to explore its capabilities.
