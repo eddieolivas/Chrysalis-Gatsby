@@ -90,6 +90,7 @@ const BlogList = props => {
         type="text"
         placeholder="Type to filter posts by title"
         onChange={handleSearch}
+        className={"border border-gray-400"}
         style={{ minWidth: "300px" }}
         value={searchTerm}
       />
@@ -101,9 +102,9 @@ const BlogList = props => {
             <button
               key={category}
               className={
-                "btn btn-primary " + -1 < categoryTerms.indexOf(category)
-                  ? "btn btn-primary active"
-                  : "btn btn-primary inactive"
+                "btn " + -1 < categoryTerms.indexOf(category)
+                  ? "btn btn-primary active bg-green"
+                  : "btn btn-primary inactive bg-green"
               }
               value={category}
               onClick={handleCategory}

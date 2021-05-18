@@ -661,13 +661,13 @@ pre tt:after {
 
 button,
 .btn.btn-primary {
-  background-color: #94618e;
+  background-color: #61af36;
   color: white;
   padding: 0.5rem 2rem;
   transition: 0.25s all ease;
 }
 
-button:hover .btn.btn-primary:hover {
+button:hover, .btn.btn-primary:hover {
   background-color: #f8eee7;
   color: rgb(0, 0, 0, 0.8);
   cursor: pointer;
