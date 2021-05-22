@@ -10,7 +10,8 @@ const Header = ({ siteTitle, siteDescription }) => (
   <>
     <div className={styles.headerWrap}>
       <div className="container main-header">
-        <div>
+        <div
+          className={"logo"}>
           <Link
             to="/"
           >
@@ -20,7 +21,10 @@ const Header = ({ siteTitle, siteDescription }) => (
             />
           </Link>
         </div>
-        <Navigation navItems={GetMenuItems().primaryNav} />
+        <div className={styles.headerRight}>
+          <Link to="/contact">Call Now: (714) 872-9382 or Schedule Online</Link>
+          <Navigation navItems={GetMenuItems().primaryNav} />
+        </div>
       </div>
     </div>
   </>
