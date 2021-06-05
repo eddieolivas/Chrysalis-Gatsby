@@ -9,8 +9,8 @@ import Avatar from "../components/image";
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO
-      title="Home"
-      description="I love solving problems, learning new things, and helping people. By day, I'm VP of Development at The Digital Ring, a full-service digital marketing agency in Madison, Wisconsin 🧀."
+      title="Fullerton Web Design & Online Marketing | Chrysalis Web Development"
+      description="Most websites go unnoticed. We know why and help you rise above the noise. We're your destination for Fullerton web design and online marketing."
       image=""
     />
     <h1>

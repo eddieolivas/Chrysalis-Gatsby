@@ -12,7 +12,7 @@ const SecondPage = ({ data }) => (
       description={data.wpgraphql.post.excerpt}
       image={
         data.wpgraphql.post.featuredImage &&
-        `https://n8finch.com${data.wpgraphql.post.featuredImage.imageFile.childImageSharp.fluid.src}`
+        `https://www.chrysaliswebdevelopment.com${data.wpgraphql.post.featuredImage.imageFile.childImageSharp.fluid.src}`
       }
     />
 

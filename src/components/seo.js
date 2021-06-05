@@ -59,7 +59,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:url`,
-          content: `https://n8finch.com`,
+          content: `https://www.chrysaliswebdevelopment.com`,
         },
         {
           name: `twitter:card`,
